@@ -85,7 +85,7 @@ params:
 ```
 params:
   env: buff-lab
-	bosh_vm_type: large
+  bosh_vm_type: large
 ```
 
 * If you run the Genesis wizard for BOSH and input the incorrect CPI credentials (user, IP, password). You need to edit the appropriate Vault entry, and re-run `genesis <name> deploy` to publish the changes. The first time you’ll notice you have bad creds is when you go to upload stemcells.
@@ -93,8 +93,8 @@ params:
 * If setting up CF as a lab instance, make sure `skip_ssl_validation` is set to true in the environment file. Otherwise smoke tests will fail and you’ll sit there for another 30 mins and waiting for a redeploy. It should look like this:
 ```
 params:
-  env: lowes-lab
-	skip_ssl_validation: true
+  env: buff-lab
+  skip_ssl_validation: true
 ```
 
 - - - -
